@@ -1,3 +1,318 @@
-.container {
-  display: grid;
+/* Mobile */
+
+body {
+    font-family: arial;
+    text-align: center;
+    background-color: lightblue;
+    background-image: url("billeder/Mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
+h1 {
+	font-size: 1.7em;
+	color: white;
+}
+
+h2 {
+	font-size: 2.3em;
+	color: white;
+}
+
+p {
+	font-size: 1.2em;
+	color:white;
+}
+
+
+#mitgrid {
+    display: grid; 
+    grid-gap: 1px;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas: 
+        "d d d"
+        "d d d"
+        "e e e"
+        "f f f"
+        "h h h"
+        "i i i"
+        "j j j"
+        "k k k"
+        "l l l";
+}
+
+
+#logo{
+	grid-area: b;
+	/*content: url(billeder/logo.png);*/
+}
+
+#sol{
+	grid-area: c;
+}
+
+#toptekst{
+	grid-area: d;
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+
+#secondtekst{
+	grid-area: e;
+	margin-bottom: 70px;
+}
+
+#sand{
+	grid-area: f;
+	margin-top: 250px;
+}
+
+#sten{
+	grid-area: h;
+	margin-top: 450px;
+}
+
+#stentoptekst{
+	grid-area: i;
+	margin-bottom: 70px;
+}
+
+#stensecondtekst{
+	grid-area: j;
+	margin-bottom: 70px;
+}
+
+#stenthirdtekst{
+	grid-area: k;
+	margin-bottom: 70px;
+}
+
+#footer{
+	grid-area: l;
+	background-color: blue;
+	opacity: 0.3;
+	width:100%;
+    height:80px;
+    position:absolute;
+    bottom:-1510px;
+    left:0;
+}
+
+
+/* Tablet */
+
+
+@media only screen and (min-width: 800px){
+
+body {
+    font-family: arial;
+    text-align: center;
+    background-color:lightblue;
+    background-image: url(billeder/Tablet.png);
+    background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 2.5em;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	color: white;
+}
+
+p {
+	font-size: 1.5em;
+	color:white;
+}
+
+#mitgrid {
+    display: grid; 
+    grid-gap: 1px;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas: 
+        "a d d"
+        "a d d"
+        "a e e"
+        "f f f"
+        "h h h"
+        "h h h"
+        "i i i"
+        "j j j"
+        "k k k"
+        "l l l";
+}
+
+#flaske{
+	grid-area: a;
+	content: url(billeder/flaske.png);
+	margin-top: 150px;
+}
+
+#logo{
+	grid-area: b;
+	/*content: url(billeder/logo.png);*/
+}
+
+#sol{
+	grid-area: c;
+}
+
+#toptekst{
+	grid-area: d;
+	margin-top: 300px;
+}
+
+#secondtekst{
+	grid-area: e;
+	text-align: center;
+}
+
+#sand{
+	grid-area: f;
+}
+
+#sten{
+	grid-area: h;
+	margin-top: 150px;
+}
+
+#stentoptekst{
+	grid-area: i;
+	margin-top: 50px;
+}
+
+#stensecondtekst{
+	grid-area: j;
+	margin-top: 50px;
+}
+
+#stenthirdtekst{
+	grid-area: k;
+	margin-top: 50px;
+}
+
+#footer{
+	grid-area: l;
+	background-color: blue;
+	opacity: 0.3;
+	width:100%;
+    height:80px;
+    position:absolute;
+    bottom:-2100px;
+    left:0;
+}
+	}
+
+
+/* Desktop */
+
+
+	@media only screen and (min-width: 1000px){
+
+body {
+    font-family: arial;
+    text-align: center;
+    background-color:lightblue;
+    background-image: url(billeder/baggrund.png);
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+h1 {
+	font-size: 3em;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	font-size: 4em;
+	color: white;
+}
+
+p {
+	font-size: 2em;
+	color:white;
+}
+
+#mitgrid {
+    display: grid; 
+    grid-gap: 1px;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas: 
+        "a d d"
+        "a d d"
+        "a e e"
+        "f f f"
+        "h h h"
+        "h h h"
+        "i i i"
+        "j j j"
+        "k k k"
+        "l l l";
+}
+
+#flaske{
+	grid-area: a;
+	content: url(billeder/flaske.png);
+	margin-top: 320px;
+}
+
+#logo{
+	grid-area: b;
+	/*content: url(billeder/logo.png);*/
+}
+
+#sol{
+	grid-area: c;
+}
+
+#toptekst{
+	grid-area: d;
+	margin-top: 300px;
+	margin-right: 300px;
+}
+
+#secondtekst{
+	grid-area: e;
+	text-align: center;
+}
+
+#sand{
+	grid-area: f;
+}
+
+#sten{
+	grid-area: h;
+	margin-top: 50px;
+}
+
+#stentoptekst{
+	grid-area: i;
+	margin-top: 50px;
+}
+
+#stensecondtekst{
+	grid-area: j;
+	margin-top: 50px;
+}
+
+#stenthirdtekst{
+	grid-area: k;
+	margin-top: 50px;
+}
+
+#footer{
+	grid-area: l;
+	background-color: blue;
+	width:100%;
+    height:80px;
+    position:absolute;
+    bottom:-2500px;
+    left:0;
+}
+
+
+	}
