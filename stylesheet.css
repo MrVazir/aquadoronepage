@@ -1,5 +1,30 @@
 /* Mobile */
 
+a:link {
+    text-decoration: underline;
+    color: white;
+}
+
+a:visited {
+    text-decoration: underline;
+    color:white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:grey;
+}
+
+a:active {
+    text-decoration: underline;
+    color:grey;
+}
+
+@font-face {
+    font-family: arial;
+    src: url(arial.ttf);
+}
+
 body {
     font-family: arial;
     text-align: center;
@@ -53,13 +78,13 @@ p {
 
 #toptekst{
 	grid-area: d;
-	margin-top: 200px;
+	margin-top: 220px;
 	margin-bottom: 50px;
 }
 
 #secondtekst{
 	grid-area: e;
-	margin-bottom: 200px;
+	margin-bottom: 250px;
 }
 
 #sand{
