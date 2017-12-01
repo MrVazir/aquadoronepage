@@ -305,7 +305,9 @@ p {
 
 #sand{
 	grid-area: f;
-	.
+	/*content: url(billeder/sandsten.png);
+	position: absolute;*/
+
 }
 
 #sten{
